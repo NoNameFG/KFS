@@ -1,0 +1,9 @@
+#logotype{
+  width: 180px;
+}
+
+@media screen and (max-width: 765px) {
+  #logotype{
+    display: none;
+  }
+}

@@ -1,0 +1,142 @@
+.item__description{
+  width: 100%
+}
+
+.item__main-image{
+  flex: 0 0 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+  border-radius: 5px;
+}
+
+.item__main-image-swipe{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: left .6s ease-out;
+}
+
+.item__main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item__description{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.item__main-album{
+  display: flex;
+  width: 500px;
+  padding-bottom: 4px;
+  overflow-x: auto;
+  height: 110px;
+  padding-top: 10px;
+}
+
+.item__main-about{
+  display: flex;
+  flex-direction: column;
+}
+
+.item__main-description{
+  margin: 15px 15px;
+  color: rgba(102, 105, 88, 1);
+  flex: .2 .2 350px;
+}
+
+.item__main-description-info{
+  margin-top: 25px;
+  text-shadow: 0 0 2px rgba(102, 105, 88, .2);
+}
+
+.item__main-description-price{
+  font-size: 25px;
+  text-shadow: 0 0 2px rgba(102, 105, 88, .2);
+}
+
+.item__main-description-title{
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 2px rgba(102, 105, 88, .2);
+}
+
+.item__main-album::-webkit-scrollbar {
+    height: 8px;
+}
+
+.item__main-album::-webkit-scrollbar-track {
+    background: #919E69;
+}
+
+.item__main-album::-webkit-scrollbar-thumb {
+    background: #696C57;
+}
+
+.item__main-album::-webkit-scrollbar-thumb:hover {
+    background: #696559;
+}
+
+.item__main-album-control{
+  flex: 0 0 100px;
+  height: 100px;
+  background: center center no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 4px rgba(0,0,0, 0.5);
+  border-radius: 5px;
+}
+
+.item__main-album-control:not(:first-child){
+  margin-left: 10px;
+}
+
+.item__main-album-control:first-child{
+  margin-left: 1px;
+}
+
+.image__holder{
+  flex: 0 0 100%;
+  background: center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 765px) {
+  .item__main-album{
+    width: 90vw;
+    margin: 0 5px;
+  }
+
+  .item__main-image{
+    flex: 0 0 60vh;
+    width: 60vw;
+  }
+  .item__main-about{
+    align-items: center;
+  }
+
+  .item__main-description{
+    flex: 1 1 350px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .item__main-album{
+    overflow-y: hidden;
+  }
+
+  .item__main{
+    justify-content: center;
+  }
+}

@@ -1,0 +1,45 @@
+.aboutUs{
+  color: #3A3F4B;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-col{
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background: rgba(66, 69, 58, .20);
+}
+
+.phone-number{
+  font-size: 20px;
+  color: #3A3F4B;
+  text-decoration: none;
+}
+
+.aboutUs__info-description{
+  margin-right: 100px;
+}
+
+.phone-number:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 765px) {
+  .aboutUs__info-title{
+    font-size: 20px;
+  }
+
+  .aboutUs__info-description{
+    font-size: 15px;
+  }
+
+  .phone-number{
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  .aboutUs__info-description{
+    margin-right: 0;
+  }
+}

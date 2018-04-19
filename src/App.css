@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Kaushan+Script');
+
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.main__content{
+  margin-left: calc(8vw + 150px);
+  font-family: 'Open Sans', sans-serif;
+  padding: 100px 50px 40px 50px;
+}
+
+.main__page{
+  display: none;
+}
+
+@media screen and (max-width: 765px) {
+  .main__content{
+    margin-left: 0;
+    padding: 60px 50px;
+  }
+
+  .main__page{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main__page-title{
+    margin-top: calc(50vh);
+    transform: translateY(-50%);
+    font-family: 'Kaushan Script', cursive;
+    color: #6C006D;
+    font-size: calc(11vw - 5px);
+  }
+
+  .main__page-title-dott{
+    color: #C37FEC;
+  }
+}

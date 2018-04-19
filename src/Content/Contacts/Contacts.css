@@ -1,0 +1,46 @@
+.contacts{
+  color: #3A3F4B;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__info-holder{
+}
+
+.contacts__info-section{
+  font-size: 18px;
+}
+
+.contacts__info-description{
+  margin: 0
+}
+
+.contacts__info-section a{
+  text-decoration: none;
+  color: #3A3F4B;
+}
+
+.google__map{
+  height: 400px;
+  width: 400px;
+}
+
+.contacts__info-section a:hover{
+  text-decoration: underline;
+}
+
+.bg-col{
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background: rgba(66, 69, 58, .20);
+}
+
+@media screen and (max-width: 765px) {
+  .google__map{
+    width: 60vw;
+    height: 40vh;
+  }
+}
